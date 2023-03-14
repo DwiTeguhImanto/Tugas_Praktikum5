@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- penggunaan LAYOUT-->
+        <title>Bootstrap 4: Basic - Form 3</title>
+        <!-- link untuk icon favicon  -->
+        <link rel="icon" href="favicon.ico">
+        <!-- Bootstrap CSS -->
+        <link  rel="stylesheet" href="css/bootstrap.min.css">
+
+    </head>
+
+    <!-- main content -->
+    <div class="container">
+        <!-- form untuk memvalidasi suatu inputan -->
+        <form class="was-validated">
+            <div class="form-group">
+                <!-- sebagai label/keterangan form inputan -->
+                <label for="uname">Username</label>
+                <!-- placeholder untuk memberi pesan dalam form input, required untuk memastikan inputan harus di isi -->
+                <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                <!-- memberikan keterangan pesan dibawah form input jika sudah menginput dengan benar  -->
+                <div class="valid-feedback">Valid.</div>
+                <!-- memberikan keterangan pesan dibawah form input jika belom menginput dengan benar  -->
+                <div class="invalid-feedback">
+                Please fill out this field.
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control"
+                id="pwd" placeholder="Enter password"
+                name="pswd" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">
+                Please fill out this field.
+                </div>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                <input class="form-check-input"
+                type="checkbox" name="remember" required>
+                Remember me.
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">
+                Check this checkbox to continue.
+                </div>
+               </label>
+            </div>
+            <button type="submit" class="btn btn-primary"> Submit </button>
+        </form>
+    </div>
+
+    <body>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/popper.min.js"></script>
+    </body>
+</html>
